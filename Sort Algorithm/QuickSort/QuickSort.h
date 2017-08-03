@@ -49,7 +49,7 @@ int PartSort1(int* a, int left, int right)
 	//到这里begin等于end
 	if (a[begin] > key)
 	{
-		swap(a[begin], key);
+		swap(a[begin], a[right]); //靠bug
 		return begin;
 	}
 	else //key的左边都比key小，右边没有数
